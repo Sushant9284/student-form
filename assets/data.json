@@ -1,0 +1,18 @@
+[
+    {
+        "rollNo": 1,
+        "name": "Sanjay",
+        "dob": "1998-11-02",
+        "address": "Pune",
+        "email": "sanja@gmail.com",
+        "phoneNo": 9898784512
+    },
+    {
+        "rollNo": 2,
+        "name": "Rahul",
+        "dob": "1998-11-02",
+        "address": "Nagpur",
+        "email": "rahul@gmail.com",
+        "phoneNo": 9898784512
+    }
+]
