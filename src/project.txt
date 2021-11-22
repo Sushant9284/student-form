@@ -1,0 +1,42 @@
+
+
+
+
+HR = Admin
+
+Employee Data =  Add , Delete , Edit, 
+
+Dashboard = Employee Cards display
+
+Field =
+
+|
+|---| Dashboard
+         |--Employee Details in Card
+|
+|---| Login Page
+ 
+         |--Email Id :
+         |--Password :
+|
+|---| Admin Page
+|        |--Email Id :
+         |--Password :
+
+     
+-----| Employee Registration Page  
+      -------| New Employee Registration
+      -------| Employee data Edit
+      -------| Employee data Delete
+
+-------------------------------------------------------------|||
+
+Emp No :
+Emp Name : 
+Emp Age :
+Emp DOB :
+Emp Blood Group :
+Emp Address :
+Emp Profile :
+
+--------------------------------------------------------------|||

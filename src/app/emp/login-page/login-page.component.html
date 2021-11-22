@@ -1,0 +1,52 @@
+<!-- <p>login-page works!</p> -->
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+
+            <div class="login-card">
+                <div class="login-title">
+                    <h3>Login Page</h3>
+                </div>
+
+                <div class="card text-white bg-dark">
+
+                    <form [formGroup]="form" (ngSubmit)="onClick(form)">
+
+                        <div class="form-group">
+                            <label for="id">Email ID :</label>
+                            <input id="id" type="text" class="form-control" formControlName="emailId">
+                            <span class="text-error" *ngIf="form.get('emailId').hasError('required') && 
+                            form.get('emailId').touched">Email Id
+                                is required</span>
+                            <span class="text-error" *ngIf="form.get('emailId').hasError('email') && form.get('emailId').touched">
+                                Email ID not valid.
+                            </span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pass">Password :</label>
+                            <input id="pass" type="password" class="form-control" formControlName="password">
+                            <span class="text-error" *ngIf="form.get('password').hasError('required') && form.get('password').touched">Password
+                                is
+                                required</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Login</button>
+
+                        <br>
+                        <a [routerLink]="['/emp/emp-registration']" routerLinkActive="router-link-active">New User/
+                            Registration</a>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+</div>

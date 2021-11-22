@@ -1,0 +1,90 @@
+<div class="dashboard">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Company</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
+            <div class="logout">
+                <button class="btn btn-danger" type="submit" [routerLink]="['/emp/login-page']" routerLinkActive="router-link-active">Logout</button>
+            </div>
+
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4" style="padding-bottom: 1rem;" *ngFor="let data of empDatas">
+
+                <div class="card text-white bg-dark">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img class="card-img-top" src="../../../assets/image/img_avatar1.png" alt="Card image">
+
+                            </div>
+                            <div class="col-md-8">
+                                <h4 class="card-title"> {{data.empName}}</h4>
+                                <p class="card-text">Emp No : {{data.empNo}}</p>
+                                <p class="card-text"> {{data.profile}}</p>
+                                <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- <p class="card-text">Software Developer</p> -->
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="card-text">Age : {{data.age}} </p>
+                            </div>
+                            <div class="col-sm-6">
+                                <p class="card-text">Blood Group : {{data.bloodGroup}}</p>
+                            </div>
+                        </div>
+                        <br>
+
+                        <p class="card-text">Gender :{{data.gender}}</p>
+                        <p class="card-text">DOB : {{data.dob}}</p>
+
+                        <p class="card-text">Address : {{data.address}}</p>
+                        <p class="card-text">Mobile No :{{data.mobileNo}} </p>
+
+                        <p class="card-text">Email Id : {{data.emailId}}</p>
+
+                    </div>
+                    <div class="card-footer text-muted">
+                        <a class="card-link" style="cursor:pointer;" (click)="editData()"> Edit </a>
+                        <a class="card-link" style="cursor:pointer;" (click)="deleteData(data)"> Delete </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,138 @@
+<!-- <p>emp-registration works!</p> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="registration-card">
+                <div class="registration-title">
+                    <h3>Registration</h3>
+                </div>
+                <div class="card text-white bg-dark">
+                    <form [formGroup]="registrationForm" (ngSubmit)="onSignUp()">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="empNo">Employee Id :</label>
+                                    <input id="empNo" type="text" class="form-control" formControlName="empNo">
+                                    <span class="text-error" *ngIf="registrationForm.get('empNo').hasError('required') && registrationForm.get('empNo').touched">
+                    Employee Id is required</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="empName">Name :</label>
+                                    <input id="empName" type="text" class="form-control" formControlName="empName">
+                                    <span class="text-error" *ngIf="registrationForm.get('empName').hasError('required') && registrationForm.get('empName').touched">
+                    Employee Name is required</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="emailId">Email ID :</label>
+                                    <input id="emailId" type="text" class="form-control" formControlName="emailId">
+                                    <span class="text-error" *ngIf="registrationForm.get('emailId').hasError('required') && registrationForm.get('emailId').touched">Email
+                    Id
+                    is
+                    required</span>
+                                    <span class="text-error" *ngIf="registrationForm.get('emailId').hasError('email') && registrationForm.get('emailId').touched">
+                    Email ID not valid.
+                  </span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="pass">Password :</label>
+                                    <input id="pass" type="password" class="form-control" formControlName="password">
+                                    <span class="text-error" *ngIf="registrationForm.get('password').hasError('required') && registrationForm.get('password').touched">Password
+                    is required</span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="profile">Profile :</label>
+                                    <input id="profile" type="text" class="form-control" formControlName="profile">
+                                    <span class="text-error" *ngIf="registrationForm.get('profile').hasError('required') && registrationForm.get('profile').touched">
+                    Employee profile is required</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="gender">Gender :</label>
+                                    <input id="gender" type="text" class="form-control" formControlName="gender">
+                                    <span class="text-error" *ngIf="registrationForm.get('gender').hasError('required') && registrationForm.get('gender').touched">Gender
+                    is required</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="dob">dob :</label>
+                                    <input id="dob" type="date" class="form-control" formControlName="dob">
+                                    <span class="text-error" *ngIf="registrationForm.get('dob').hasError('required') && registrationForm.get('dob').touched">
+                    DOB is required</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="age">age :</label>
+                                    <input id="age" type="text" class="form-control" formControlName="age">
+                                    <span class="text-error" *ngIf="registrationForm.get('age').hasError('required') && registrationForm.get('age').touched">
+                    age is required</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="mobileNo">Mobile No :</label>
+                                    <input id="mobileNo" type="number" class="form-control" formControlName="mobileNo">
+                                    <span class="text-error" *ngIf="registrationForm.get('mobileNo').hasError('required') && registrationForm.get('mobileNo').touched">
+                    Mobile Number is required</span>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="bloodGroup">Blood Group:</label>
+                                    <input id="bloodGroup" type="text" class="form-control" formControlName="bloodGroup">
+                                    <span class="text-error" *ngIf="registrationForm.get('bloodGroup').hasError('required') && registrationForm.get('bloodGroup').touched">
+                    Blood Group is required</span>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label for="address">Address:</label>
+                                    <input id="address" type="text" class="form-control" formControlName="address">
+                                    <span class="text-error" *ngIf="registrationForm.get('address').hasError('required') && registrationForm.get('address').touched">
+                    Address is required</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <br>
+
+                        <button type="submit" class="btn btn-primary" [disabled]="!registrationForm.valid">Submit</button>
+
+                        <button class="btn btn-default">Cancel</button>
+
+                        <a [routerLink]="['/emp/login-page']" routerLinkActive="router-link-active">Already Register /
+              Login</a>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2"></div>
+    </div>
+</div>
