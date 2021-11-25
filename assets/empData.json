@@ -1,0 +1,74 @@
+{
+  "emp": [
+    {
+      "empName": "Prathamesh",
+      "empNo": "111",
+      "profile": "Software Engineer",
+      "gender": "Male",
+      "dob": "1998-12-05",
+      "age": "24",
+      "emailId": "prath@gmail.com",
+      "password": "prath",
+      "mobileNo": 9878897889,
+      "address": "Pune",
+      "bloodGroup": "O+",
+      "id": 1
+    },
+    {
+      "empName": "Suraj",
+      "empNo": "112",
+      "profile": "Automation Tester",
+      "gender": "Male",
+      "dob": "1997-04-05",
+      "age": "25",
+      "emailId": "suraj@gmail.com",
+      "password": "suraj",
+      "mobileNo": 8978451223,
+      "address": "Dehu Road",
+      "bloodGroup": "B+",
+      "id": 2
+    },
+    {
+      "empName": "Saurabh",
+      "empNo": "113",
+      "profile": "Software Developer",
+      "gender": "Male",
+      "dob": "1998-04-05",
+      "age": "24",
+      "emailId": "saurabh@gmail.com",
+      "password": "saurabh",
+      "mobileNo": 7845122365,
+      "address": "Pimple Gurav",
+      "bloodGroup": "B-",
+      "id": 3
+    },
+    {
+      "empName": "Kunal",
+      "empNo": "114",
+      "profile": "Implementation",
+      "gender": "Male",
+      "dob": "2021-11-16",
+      "age": "25",
+      "emailId": "kunal@gmail.com",
+      "password": "kunal",
+      "mobileNo": 8978451223,
+      "address": "Pune",
+      "bloodGroup": "o",
+      "id": 4
+    },
+    {
+      "empName": "SS",
+      "empNo": "455",
+      "profile": "UI",
+      "gender": "Male",
+      "dob": "2021-11-24",
+      "age": "65",
+      "emailId": "ss@ss",
+      "password": "ss",
+      "mobileNo": 9898989898,
+      "address": "pune",
+      "bloodGroup": "o",
+      "id": 5
+    }
+  ]
+}
