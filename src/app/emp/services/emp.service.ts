@@ -26,6 +26,8 @@ export class EmpService {
     return this.http.post<emp>(this.api, JSON.stringify(emp), this.httpOptions)
   }
 
+
+
   deleteRegostrationForm(id: any): Observable<any> {
     return this.http.delete<any>(this.api + '/' + id, this.httpOptions)
   }
